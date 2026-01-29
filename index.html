@@ -1,122 +1,139 @@
 <!doctype html>
 <html data-version="production-archive-v0.0.123" data-landing-name="social-survey" lang="">
 <head>
-    <script>
-        var APP_CONFIG = {
-            "domain": "https://jup9.com",
-            "mainExit_currentTab_zoneId": 10347751,
-            "mainExit_newTab_zoneId": 10347750,
-            "reverse_zoneId": 10347749,
-            "autoexit_zoneId": 10347754,
-            "autoexit_timeToRedirect": 90,
-            "back_zoneId": 10347755,
-            "back_count": 5,
-            "tabUnderClick_zoneId": 10347757,
-            "ageExit_currentTab_zoneId": 10347753,
-            "ageExit_newTab_zoneId": 10347752,
-            "videoCount": 1
-        };
-    </script>
-    
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" type="image/x-icon">
+  <script>
+    var APP_CONFIG = {
+      "domain": "https://jup9.com",
+      "mainExit_currentTab_zoneId": 10347751,
+      "mainExit_newTab_zoneId": 10347750,
+      "reverse_zoneId": 10347749,
+      "autoexit_zoneId": 10347754,
+      "autoexit_timeToRedirect": 90,
+      "back_zoneId": 10347755,
+      "back_count": 5,
+      "tabUnderClick_zoneId": 10347757,
+      "ageExit_currentTab_zoneId": 10347753,
+      "ageExit_newTab_zoneId": 10347752,
+      "videoCount": 1
+    };
+  </script>
 
-    <script>"use strict";(()=>{var b=()=>{let t=new Date,a=t.getUTCFullYear(),n=String(t.getUTCMonth()+1).padStart(2,"0"),r=String(t.getUTCDate()).padStart(2,"0"),o=String(t.getUTCHours()).padStart(2,"0"),i=String(t.getUTCMinutes()).padStart(2,"0"),l=String(t.getUTCSeconds()).padStart(2,"0"),c=String(t.getUTCMilliseconds()*1e3).padStart(6,"0");return`${a}-${n}-${r} ${o}:${i}:${l}.${c} +00:00`};function d({url:t,data:a}){var r;return((r=window==null?void 0:window.navigator)==null?void 0:r.sendBeacon(t.toString(),a?JSON.stringify(a):void 0))?Promise.resolve():Promise.reject(new Error("sendBeacon failed"))}var e=new URL(window.location.href),h,v,p,w,f,y,T,P,x,z,E,N,S,D,C,F,I,$,k,s={pz:(h=e.searchParams.get("pz"))!=null?h:"",tb:(v=e.searchParams.get("tb"))!=null?v:"",tb_reverse:(p=e.searchParams.get("tb_reverse"))!=null?p:"",ae:(w=e.searchParams.get("ae"))!=null?w:"",z:(f=e.searchParams.get("z"))!=null?f:"",var:(y=e.searchParams.get("var"))!=null?y:"",var_1:(T=e.searchParams.get("var_1"))!=null?T:"",var_2:(P=e.searchParams.get("var_2"))!=null?P:"",var_3:(x=e.searchParams.get("var_3"))!=null?x:"",b:(z=e.searchParams.get("b"))!=null?z:"",campaignid:(E=e.searchParams.get("campaignid"))!=null?E:"",abtest:(N=e.searchParams.get("abtest"))!=null?N:"",rhd:(S=e.searchParams.get("rhd"))!=null?S:"1",s:(D=e.searchParams.get("s"))!=null?D:"",ymid:(C=e.searchParams.get("ymid"))!=null?C:"",wua:(F=e.searchParams.get("wua"))!=null?F:"",use_full_list_or_browsers:(I=e.searchParams.get("use_full_list_or_browsers"))!=null?I:"",cid:($=e.searchParams.get("cid"))!=null?$:"",geo:(k=e.searchParams.get("geo"))!=null?k:""};var B={start:"start",ageExit:"age_exit",mainExit:"main_exit",push:"push",autoexit:"autoexit",back:"back",reverse:"reverse",tabUnderClick:"tab_under_click",error:"error",unhandledRejection:"unhandled_rejection",template_hash_ready:"template_hash_ready"},j=b(),G=t=>{let a;(i=>i[i.BAD_REQUEST=400]="BAD_REQUEST")(a||(a={}));let n="https://wuytl.com",r=new URL(`${n}/sync-metrics`);d({url:r,data:t}).catch(o=>{o.status!=400&&setTimeout(()=>{d({url:r,data:t}).catch(()=>{console.error(`Metrics sync failed: ${t}`)})},100)})},U=()=>s.abtest?s.abtest:APP_CONFIG.abtest?String(APP_CONFIG.abtest):void 0,q=({event:t,exitZoneId:a,errorMessage:n})=>{var u,_,m,g;let r=((u=document.querySelector("html"))==null?void 0:u.getAttribute("data-landing-name"))||"",o=((_=document.querySelector("html"))==null?void 0:_.getAttribute("data-version"))||"",i=window.location.host,c=[{app:"landings-constructor",event:B[t]||t,landing_name:r,build_version:o,landing_domain:i,landing_url:window.location.href,exit_zone_id:a?Number(a):void 0,template_hash:(m=window.templateHash)!=null?m:"",request_var:s.var_3,source_zone_id:isNaN(Number(s.var_2))?null:Number(s.var_2),sub_id:s.var_1,landing_load_date_time:j,error_message:n!=null?n:"",ab2r:U()}];((g=APP_CONFIG.isAnalyticEnabled)!=null?g:!0)&&G(c)};window.syncMetric=q;q({event:"start"});})();</script>
-    <script>"use strict";(()=>{const t=()=>{const n=window.syncMetric;if(!n){console.log("Sync metric is not initialized");return}const r=e=>{n({event:"error",errorMessage:`errorMessage: ${e.message}, lineNumber: ${e.lineno}, columnNumber: ${e.colno}, file: ${e.filename}`})},o=e=>{n({event:"unhandledRejection",errorMessage:e.reason})};window.addEventListener("error",r),window.addEventListener("unhandledrejection",o)};t();})();</script>
-    <script src="survey.js"></script>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" type="image/x-icon">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <title data-translate="social_relationship">Social Relationship</title>
-    
-    <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-        .body { background: #000 !important; }
-        .video-wrapper, .video { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; filter: brightness(0.5); }
-        .content-wrapper { position: relative; z-index: 10; height: 100vh; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%); }
-        .survey-container { width: 100%; max-width: 400px; padding: 20px; text-align: center; color: #fff; }
-        .step__title { font-size: 32px; font-weight: 900; text-transform: uppercase; margin-bottom: 10px; }
-        .step__question { font-size: 18px; line-height: 1.4; margin-bottom: 30px; opacity: 0.9; }
-        .step__answers { display: flex; gap: 15px; justify-content: center; }
-        .btn { flex: 1; padding: 18px; border-radius: 50px; border: none; font-size: 18px; font-weight: bold; cursor: pointer; text-decoration: none; display: flex; align-items: center; justify-content: center; text-transform: uppercase; transition: 0.2s; }
-        .btn--primary { background: linear-gradient(180deg, #1a5695 0%, #0d3d6d 100%); color: #fff; }
-        .btn--accent { background: rgba(255,255,255,0.2); color: #fff; backdrop-filter: blur(10px); }
-        .btn--start { background: linear-gradient(180deg, #0076db 0%, #0056a0 100%); width: 100% !important; flex: none; }
-        
-        /* ДОПОЛНИТЕЛЬНЫЕ ЭЛЕМЕНТЫ */
-        .online-status { position: absolute; top: 20px; left: 20px; z-index: 20; background: rgba(0, 0, 0, 0.6); color: #fff; padding: 8px 15px; border-radius: 30px; font-size: 13px; font-weight: bold; backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.1); }
-        .online-status span { color: #00ff00; }
-        .slots-count { margin-left: 10px; color: #ffcc00 !important; }
+  <script>"use strict";(()=>{var b=()=>{let t=new Date,a=t.getUTCFullYear(),n=String(t.getUTCMonth()+1).padStart(2,"0"),r=String(t.getUTCDate()).padStart(2,"0"),o=String(t.getUTCHours()).padStart(2,"0"),i=String(t.getUTCMinutes()).padStart(2,"0"),l=String(t.getUTCSeconds()).padStart(2,"0"),c=String(t.getUTCMilliseconds()*1e3).padStart(6,"0");return`${a}-${n}-${r} ${o}:${i}:${l}.${c} +00:00`};function d({url:t,data:a}){var r;return((r=window==null?void 0:window.navigator)==null?void 0:r.sendBeacon(t.toString(),a?JSON.stringify(a):void 0))?Promise.resolve():Promise.reject(new Error("sendBeacon failed"))}var e=new URL(window.location.href),h,v,p,w,f,y,T,P,x,z,E,N,S,D,C,F,I,$,k,s={pz:(h=e.searchParams.get("pz"))!=null?h:"",tb:(v=e.searchParams.get("tb"))!=null?v:"",tb_reverse:(p=e.searchParams.get("tb_reverse"))!=null?p:"",ae:(w=e.searchParams.get("ae"))!=null?w:"",z:(f=e.searchParams.get("z"))!=null?f:"",var:(y=e.searchParams.get("var"))!=null?y:"",var_1:(T=e.searchParams.get("var_1"))!=null?T:"",var_2:(P=e.searchParams.get("var_2"))!=null?P:"",var_3:(x=e.searchParams.get("var_3"))!=null?x:"",b:(z=e.searchParams.get("b"))!=null?z:"",campaignid:(E=e.searchParams.get("campaignid"))!=null?E:"",abtest:(N=e.searchParams.get("abtest"))!=null?N:"",rhd:(S=e.searchParams.get("rhd"))!=null?S:"1",s:(D=e.searchParams.get("s"))!=null?D:"",ymid:(C=e.searchParams.get("ymid"))!=null?C:"",wua:(F=e.searchParams.get("wua"))!=null?F:"",use_full_list_or_browsers:(I=e.searchParams.get("use_full_list_or_browsers"))!=null?I:"",cid:($=e.searchParams.get("cid"))!=null?$:"",geo:(k=e.searchParams.get("geo"))!=null?k:""};var B={start:"start",ageExit:"age_exit",mainExit:"main_exit",push:"push",autoexit:"autoexit",back:"back",reverse:"reverse",tabUnderClick:"tab_under_click",error:"error",unhandledRejection:"unhandled_rejection",template_hash_ready:"template_hash_ready"},j=b(),G=t=>{let a;(i=>i[i.BAD_REQUEST=400]="BAD_REQUEST")(a||(a={}));let n="https://wuytl.com",r=new URL(`${n}/sync-metrics`);d({url:r,data:t}).catch(o=>{o.status!=400&&setTimeout(()=>{d({url:r,data:t}).catch(()=>{console.error(`Metrics sync failed: ${t}`)})},100)})},U=()=>s.abtest?s.abtest:APP_CONFIG.abtest?String(APP_CONFIG.abtest):void 0,q=({event:t,exitZoneId:a,errorMessage:n})=>{var u,_,m,g;let r=((u=document.querySelector("html"))==null?void 0:u.getAttribute("data-landing-name"))||"",o=((_=document.querySelector("html"))==null?void 0:_.getAttribute("data-version"))||"",i=window.location.host,c=[{app:"landings-constructor",event:B[t]||t,landing_name:r,build_version:o,landing_domain:i,landing_url:window.location.href,exit_zone_id:a?Number(a):void 0,template_hash:(m=window.templateHash)!=null?m:"",request_var:s.var_3,source_zone_id:isNaN(Number(s.var_2))?null:Number(s.var_2),sub_id:s.var_1,landing_load_date_time:j,error_message:n!=null?n:"",ab2r:U()}];((g=APP_CONFIG.isAnalyticEnabled)!=null?g:!0)&&G(c)};window.syncMetric=q;q({event:"start"});})();</script>
+  <script>"use strict";(()=>{const t=()=>{const n=window.syncMetric;if(!n){console.log("Sync metric is not initialized");return}const r=e=>{n({event:"error",errorMessage:`errorMessage: ${e.message}, lineNumber: ${e.lineno}, columnNumber: ${e.colno}, file: ${e.filename}`})},o=e=>{n({event:"unhandledRejection",errorMessage:e.reason})};window.addEventListener("error",r),window.addEventListener("unhandledrejection",o)};t();})();</script>
 
-        .live-label { position: absolute; top: 20px; right: 20px; z-index: 20; background: #ff0000; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 12px; font-weight: 900; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
-        .live-dot { width: 8px; height: 8px; background: #fff; border-radius: 50%; animation: blink 1s infinite; }
+  <script src="survey.js"></script>
 
-        .toast-msg { position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); z-index: 100; background: rgba(255,255,255,0.95); color: #000; padding: 12px 20px; border-radius: 15px; width: 80%; max-width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); transition: 0.5s ease-in-out; display: flex; align-items: center; gap: 10px; }
-        .toast-msg.show { bottom: 30px; }
-        .toast-avatar { width: 40px; height: 40px; border-radius: 50%; background: #ddd; object-fit: cover; }
-        .toast-content b { display: block; font-size: 14px; }
-        .toast-content span { font-size: 13px; color: #555; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <title data-translate="social_relationship">Social Relationship</title>
 
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
-        .progress { display: none !important; }
-    </style>
+  <style>
+    body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .body { background: #000 !important; }
+    .video-wrapper, .video { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; filter: brightness(0.5); }
+    .content-wrapper { position: relative; z-index: 10; height: 100vh; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%); }
+    .survey-container { width: 100%; max-width: 400px; padding: 20px; text-align: center; color: #fff; }
+    .step__title { font-size: 32px; font-weight: 900; text-transform: uppercase; margin-bottom: 10px; }
+    .step__question { font-size: 18px; line-height: 1.4; margin-bottom: 30px; opacity: 0.9; }
+    .step__answers { display: flex; gap: 15px; justify-content: center; }
+    .btn { flex: 1; padding: 18px; border-radius: 50px; border: none; font-size: 18px; font-weight: bold; cursor: pointer; text-decoration: none; display: flex; align-items: center; justify-content: center; text-transform: uppercase; transition: 0.2s; }
+    .btn--primary { background: linear-gradient(180deg, #1a5695 0%, #0d3d6d 100%); color: #fff; }
+    .btn--accent { background: rgba(255,255,255,0.2); color: #fff; backdrop-filter: blur(10px); }
+    .btn--start { background: linear-gradient(180deg, #0076db 0%, #0056a0 100%); width: 100% !important; flex: none; }
 
-    <script defer src="./assets/scripts/common.js"></script>
+    /* ДОПОЛНИТЕЛЬНЫЕ ЭЛЕМЕНТЫ */
+    .online-status {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 20;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 900;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .online-status .label { color: #fff; }
+    .online-status .count-near { color: #00ff00; }
+    .online-status .label.slots { margin-left: 10px; color: #ffcc00; }
+    .online-status .count-free { color: #ffcc00; }
+
+    .live-label { position: absolute; top: 20px; right: 20px; z-index: 20; background: #ff0000; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 12px; font-weight: 900; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
+    .live-dot { width: 8px; height: 8px; background: #fff; border-radius: 50%; animation: blink 1s infinite; }
+
+    .toast-msg { position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); z-index: 100; background: rgba(255,255,255,0.95); color: #000; padding: 12px 20px; border-radius: 15px; width: 80%; max-width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); transition: 0.5s ease-in-out; display: flex; align-items: center; gap: 10px; }
+    .toast-msg.show { bottom: 30px; }
+    .toast-avatar { width: 40px; height: 40px; border-radius: 50%; background: #ddd; object-fit: cover; }
+    .toast-content b { display: block; font-size: 14px; }
+    .toast-content span { font-size: 13px; color: #555; }
+
+    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+    .progress { display: none !important; }
+  </style>
+
+  <script defer src="./assets/scripts/common.js"></script>
 </head>
 
 <body class="body">
-    <div class="live-label"><div class="live-dot"></div> Live</div>
-<div class="online-status">
-  <span class="label">Рядом:</span>
-  <span class="count-near">34</span>
-  <span class="label slots">Свободно:</span>
-  <span class="count-free">2</span>
-</div>
-    
-  <div id="toast" class="toast-msg">
-  <div class="toast-content">
-    <b data-translate="toast_name">Mia69</b>
-    <span data-translate="toast_text">Ты тут? Включай камеру…</span>
+  <div class="live-label"><div class="live-dot"></div> Live</div>
+
+  <div class="online-status">
+    <span class="label">Рядом:</span>
+    <span class="count-near">34</span>
+    <span class="label slots">Свободно:</span>
+    <span class="count-free">2</span>
   </div>
-</div>
 
-
-    <div class="progress" style="display:none !important;"><div class="bar"></div></div>
-    
-    <div class="content-wrapper">
-        <div class="survey-container"></div>
+  <div id="toast" class="toast-msg">
+    <div class="toast-content">
+      <b data-translate="toast_name">Mia69</b>
+      <span data-translate="toast_text">Ты тут? Включай камеру…</span>
     </div>
+  </div>
 
-    <div class="video-wrapper">
-        <video autoplay muted playsinline loop class="video">
-            <source src="bg_video.mp4" type="video/mp4" />
-        </video>
+  <div class="progress" style="display:none !important;"><div class="bar"></div></div>
+
+  <div class="content-wrapper">
+    <div class="survey-container"></div>
+  </div>
+
+  <div class="video-wrapper">
+    <video autoplay muted playsinline loop class="video">
+      <source src="bg_video.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <template id="step">
+    <div class="step current">
+      <div class="step__header"><h1 class="step__title">Title</h1></div>
+      <div class="step__body"><p class="step__question">Question</p></div>
+      <div class="step__footer"><div class="step__answers"></div></div>
     </div>
+  </template>
 
-    <template id="step">
-        <div class="step current">
-            <div class="step__header"><h1 class="step__title">Title</h1></div>
-            <div class="step__body"><p class="step__question">Question</p></div>
-            <div class="step__footer"><div class="step__answers"></div></div>
-        </div>
-    </template>
+  <template id="step-answer-left"><a class="btn btn--accent" href="#">Answer</a></template>
+  <template id="step-answer-right"><a class="btn btn--primary" href="#">Answer</a></template>
+  <template id="step-answer-single">
+    <div class="step__answers step__answers--single"><a class="btn btn--primary btn--start" href="#">Answer</a></div>
+  </template>
 
-    <template id="step-answer-left"><a class="btn btn--accent" href="#">Answer</a></template>
-    <template id="step-answer-right"><a class="btn btn--primary" href="#">Answer</a></template>
-    <template id="step-answer-single">
-        <div class="step__answers step__answers--single"><a class="btn btn--primary btn--start" href="#">Answer</a></div>
-    </template>
+  <script>
+    setTimeout(() => {
+      document.getElementById('toast').classList.add('show');
+      setTimeout(() => {
+        document.getElementById('toast').classList.remove('show');
+      }, 5000);
+    }, 2000);
+  </script>
 
-    <script>
-        // Показ уведомления через 2 секунды
-        setTimeout(() => {
-            document.getElementById('toast').classList.add('show');
-            // Спрятать через 5 секунд
-            setTimeout(() => {
-                document.getElementById('toast').classList.remove('show');
-            }, 5000);
-        }, 2000);
-    </script>
-
-    <script>"use strict";(()=>{const c=typeof window<"u"&&(window.isSecureContext||window.location.protocol==="https:"||window.location.hostname==="localhost");function a(e){return new Promise((t,n)=>{try{if(!c)return n("this feature is available only in secure contexts (HTTPS)");if(!(crypto!=null&&crypto.subtle.digest))return n("crypto.subtle.digest is not available");const r=new TextEncoder;crypto.subtle.digest("SHA-256",r.encode(e)).then(o=>{const s=Array.from(new Uint8Array(o)).map(i=>i.toString(16).padStart(2,"0")).join("");t(s)}).catch(n)}catch(r){n(r)}})}function d(){const e=[];return performance.getEntriesByType("resource").forEach(t=>{const n=t,r=n.initiatorType==="link"&&n.name.includes(".css"),o=n.initiatorType==="script"&&n.name.includes(".js");(r||o)&&typeof n.decodedBodySize=="number"&&e.push(n.decodedBodySize)}),e.sort(),e.join("-")}function l(e){let t=e;return t=t.replace(/<base.*?>/gm,""),t=t.replace(/var\s+APP_CONFIG\s*=\s*\{[^}]*\};*/gm,""),t=t.replace(/[\r\n]/gm,""),t.trim()}const h=l(document.documentElement.innerHTML);window.templateHash=null;try{document.addEventListener("DOMContentLoaded",()=>{a(JSON.stringify([h,d()])).then(e=>{var t;window.templateHash=e,(t=window.syncMetric)==null||t.call(window,{event:"template_hash_ready"})}).catch(e=>{console.error(`Error getting the template hash in promise: ${e.toString()}`)})})}catch(e){e&&typeof e=="object"&&console.error(`Error getting the template hash: ${e.toString()}`)}})();</script>
+  <script>"use strict";(()=>{const c=typeof window<"u"&&(window.isSecureContext||window.location.protocol==="https:"||window.location.hostname==="localhost");function a(e){return new Promise((t,n)=>{try{if(!c)return n("this feature is available only in secure contexts (HTTPS)");if(!(crypto!=null&&crypto.subtle.digest))return n("crypto.subtle.digest is not available");const r=new TextEncoder;crypto.subtle.digest("SHA-256",r.encode(e)).then(o=>{const s=Array.from(new Uint8Array(o)).map(i=>i.toString(16).padStart(2,"0")).join("");t(s)}).catch(n)}catch(r){n(r)}})}function d(){const e=[];return performance.getEntriesByType("resource").forEach(t=>{const n=t,r=n.initiatorType==="link"&&n.name.includes(".css"),o=n.initiatorType==="script"&&n.name.includes(".js");(r||o)&&typeof n.decodedBodySize=="number"&&e.push(n.decodedBodySize)}),e.sort(),e.join("-")}function l(e){let t=e;return t=t.replace(/<base.*?>/gm,""),t=t.replace(/var\s+APP_CONFIG\s*=\s*\{[^}]*\};*/gm,""),t=t.replace(/[\r\n]/gm,""),t.trim()}const h=l(document.documentElement.innerHTML);window.templateHash=null;try{document.addEventListener("DOMContentLoaded",()=>{a(JSON.stringify([h,d()])).then(e=>{var t;window.templateHash=e,(t=window.syncMetric)==null||t.call(window,{event:"template_hash_ready"})}).catch(e=>{console.error(`Error getting the template hash in promise: ${e.toString()}`)})})}catch(e){e&&typeof e=="object"&&console.error(`Error getting the template hash: ${e.toString()}`)}})();</script>
 </body>
 </html>
